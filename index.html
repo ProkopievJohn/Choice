@@ -2,35 +2,35 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
-<link rel="stylesheet" href="css/vender.css">
-<link rel="stylesheet" href="css/main.css">
+	<title>Choice for me</title>
+	
+	<link rel="stylesheet" href="css/main.css">
+
+
 </head>
 <body>
-<div class="row">
-	<div class="name small-2 columns"><img src="img/logo_lr.png" alt="my logo"></div>
-	<div class="name small-8 columns end">Choice</div>
-</div>
 
-<div class="row anwear">
-	<div class="small-5 columns">
-		<textarea name="choic" value="" placeholder="this" required="required" id="firsttextarea"></textarea>
-	</div>
-	<div class="choice small-2 columns">OR</div>
-	<div class="small-5 columns">
-		<textarea name="choic" value="" placeholder="this" required="required" id="secondtextarea"></textarea>
-	</div>
-</div>
+	<header class="header">
+		<div class="logo left"><img src="img/logo_lr.png" alt="my logo"></div>
+		<h1 class="name right">Choice</h1>
+	</header>
 
-<div class="row">
-	<div class="temp small-6 columns">
-		<button class="button secondary" id="doing">Choose for me</button>
-	</div>
-	<div class="temp small-6 columns">
-		<button class="button secondary" id="again">Again</button>
-	</div>
-</div>
+	<section class="anwear">
+			<textarea name="choic" value="" rows="10" placeholder="this" required="required" id="firsttextarea" class="left"></textarea>
+		<div class="choice">OR</div>
+			<textarea name="choic" value="" rows="10" placeholder="this" required="required" id="secondtextarea" class="right"></textarea>
+	</section>
 
-<script src="js/main.js"></script>
+	<section class="resp">
+		<span class="response">response</span>
+	</section>
+
+	<section class="buttons">
+		<button class="btn" id="doing">Choose for me</button>
+		<button class="btn" id="again">Again</button>
+	</section>
+
+	
+	<script src="js/main.js"></script>
 </body>
 </html>
